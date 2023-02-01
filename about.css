@@ -47,12 +47,11 @@ header {
   color: #ff0050;
 }
 
-.header .logo {
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
+.logo {
+  width: 10%;
+}
+#logo-img {
+  width: 50%;
 }
 
 /* menu */
@@ -254,6 +253,7 @@ header {
   width: 60%;
   margin-inline: auto;
   gap: 15px;
+  margin-block: 100px;
   padding-block: 100px;
 }
 
