@@ -193,9 +193,8 @@ header {
 .service-box {
   display: flex;
   flex-direction: column;
-  height: 600px;
   margin-inline: 100px;
-  width: 400px;
+  width: 40%;
   transition: all 0.8s;
 }
 .service-img {
@@ -208,6 +207,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 50px;
+  padding-inline: 30px;
 }
 .service-text h3 {
   margin-bottom: 50px;
@@ -232,118 +233,98 @@ header {
   .service-box {
     width: 80%;
     margin-inline: auto;
+    height: auto;
+    margin-block: 30px;
   }
 }
-/* OFFERS */
+
+/* PRICING */
+
 .pricing {
+  width: 100%;
+  margin-inline: auto;
+  background-color: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .pricing-header {
-  padding-block: 60px;
   background-color: yellow;
-  color: black;
   width: 100%;
-  text-align: center;
+  padding-block: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
 }
 .pricing-header h1 {
   font-size: 3rem;
-  text-align: center;
-  width: 800px;
+  width: 50%;
+  margin-inline: auto;
 }
 .pricing-header h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
-.offers {
+.pricing-content {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-block: 300px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  padding-block: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("slike/laptopnew.webp");
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center 50%;
   background-repeat: no-repeat;
 }
-.offer-boxes {
-  width: 100%;
-  display: flex;
-}
-.offer-box {
+.pricing-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #000;
-  border-radius: 15px;
-  box-shadow: -5px 5px 0px yellow;
-  border: 1px solid yellow;
-  padding: 50px;
-  height: 100%;
+  justify-content: center;
+  width: 20%;
   margin-inline: 100px;
 }
-.offer-box h2 {
+.pricing-container h2 {
   color: yellow;
   font-size: 3rem;
-  margin-right: 200px;
-  margin-bottom: 50px;
 }
-.offer-box ul {
-  font-size: 1.5rem;
+.pricing-container ul {
   color: white;
-  margin-bottom: 50px;
+  font-size: 1.2rem;
 }
-#price {
-  width: 300px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 1.5rem;
+#pricing-purchase {
+  width: 14rem;
+  padding-block: 12px;
+  margin-top: 50px;
   border-radius: 10px;
-  border: none;
+  border: transparent;
 }
 @media (max-width: 1200px) {
-  .pricing {
-    height: auto;
-    width: 100%;
-  }
-  .pricing-header {
-    padding-block: 30px;
-    height: auto;
-  }
   .pricing-header h1 {
     width: auto;
     font-size: 2.5rem;
-    margin-bottom: 20px;
   }
-  .pricing-header h3 {
-    width: auto;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .offers {
-    height: auto;
-    background-color: #141414;
-  }
-  .offer-boxes {
+  .pricing-content {
+    padding-block: 100px;
+    background: none;
     flex-direction: column;
-    margin-block: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
   }
-  .offer-box {
-    width: 60%;
+  .pricing-container {
+    width: auto;
+    margin-bottom: 50px;
     margin-inline: auto;
-    margin-block: 20px;
-    padding-left: 70px;
+  }
+  .pricing-container ul {
+    list-style: none;
   }
 }
+
 /* User experience */
 .users {
   display: flex;
@@ -360,7 +341,7 @@ header {
 .user-conts {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
@@ -372,9 +353,9 @@ header {
   padding: 50px;
   background-color: yellow;
   box-shadow: -7px 7px 0px #000;
-  width: 400px;
+  width: 30%;
   transition: all 0.6s;
-  height: 400px;
+  height: auto;
   margin-inline: 100px;
 }
 .user-img {
@@ -399,6 +380,7 @@ header {
   height: 50%;
   margin-top: 50px;
   font-size: 1.3rem;
+  width: 100%;
 }
 .border {
   height: 50%;
