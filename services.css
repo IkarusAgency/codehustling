@@ -236,6 +236,9 @@ header {
     height: auto;
     margin-block: 30px;
   }
+  .service-text p {
+    font-size: 1.3rem;
+  }
 }
 
 /* PRICING */
@@ -284,16 +287,20 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
+  align-items: center;
+  width: 80%;
   margin-inline: 100px;
 }
 .pricing-container h2 {
   color: yellow;
   font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 .pricing-container ul {
   color: white;
   font-size: 1.2rem;
+  text-align: center;
 }
 #pricing-purchase {
   width: 14rem;
