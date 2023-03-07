@@ -33,6 +33,7 @@
         ></label>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
       </header>
@@ -64,8 +65,8 @@
           <div class="text">
             <h2>For Developers</h2>
             <p>
-              Improving developer's careers and guiding them to the most
-              efficient career path
+              Improving developers career and guiding them to the most efficent
+              career path
             </p>
           </div>
         </div>
@@ -79,7 +80,7 @@
           <div class="text">
             <h2>For Creative Minds</h2>
             <p>
-              Our community highly supports creativity. As mentioned in our
+              Our community highly supports creativity. As mentioned on our
               name, hustling on your career is what we crave.
             </p>
           </div>
@@ -105,7 +106,7 @@
           <div class="text">
             <h2>Save Time</h2>
             <p>We value your time!</p>
-            <p>Let's get the highest innovative solutions for your problems</p>
+            <p>Let's get the highest inovative solutions for your problems</p>
           </div>
         </div>
       </div>
@@ -185,23 +186,40 @@
     <div class="form-page">
       <h1>Send me a message!</h1>
       <h3>Got a question or proposal, or just want to say hello? Go ahead.</h3>
-      <form>
+      <form
+        action="https://formspree.io/f/xzbqrraq"
+        method="POST"
+        enctype="multipart/form-data"
+      >
         <div class="formcont">
           <p>Your name</p>
           <input type="text" placeholder="Enter your name" />
         </div>
         <div class="formcont">
           <p>Email Address</p>
-          <input type="email" placeholder="Enter your email address" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
         </div>
         <div class="formcont">
           <p>Send a message</p>
           <textarea
             placeholder="Hi, I am interested in one of your products. How can I purchase them?"
           ></textarea>
+          <div class="formcont">
+            <p>Upload your file</p>
+            <input
+              class="upload-form"
+              type="file"
+              class="upload-line"
+              placeholder="(Not required)"
+            />
+          </div>
         </div>
         <div class="box">
-          <button type="submit">Submit</button>
+          <button type="submit">Send</button>
         </div>
       </form>
     </div>
@@ -213,6 +231,7 @@
         <div class="summary">
           <h3>Code Hustling</h3>
           <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
           <a href="about.html">About</a>
         </div>
         <div class="products-summary">
